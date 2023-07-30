@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presentation | Hüseyin Ensari</title>
+    <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="/node_modules/reveal.js/dist/theme/league.css">
+    <link rel="stylesheet" href="styles/orange.css">
+    <link rel="stylesheet" href="styles/androidstudio.css">
+    <link rel="shortcut icon" href="/rounded/favicon-32x32.png" type="image/x-icon">
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- section & auto animation -->
+        <section>
+          <section data-auto-animate>
+            <h1>Auto Animation</h1>
+          </section>
+          <section data-auto-animate>
+            <h1>Auto Animation</h1>
+            <p>Animation</p>
+          </section>
+        </section>
+
+        <!-- iframe bg -->
+        <section  data-background-iframe="https://revealjs.com/">
+          <h1>iframe background</h1>
+        </section>
+
+        <!-- secret note  -->
+        <section>
+          Secret Notes
+          <aside class="notes">
+            Shhh, these are your private notes 📝
+            <ul>
+              <li>item 1</li>
+              <li>item 2</li>
+              <li>item 3</li>
+            </ul>
+          </aside>
+        </section>
+        
+        <!-- link and list -->
+        <section>
+          <section>
+            <a href="#1">Link & List</a>
+          </section>
+          <section data-auto-animate>
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+          </section>
+          <section data-auto-animate>
+            <ul>
+              <li>1</li>
+              <li>1.2</li>
+              <li>2</li>
+              <li>2.2</li>
+              <li>3</li>
+            </ul>
+          </section>
+        </section>
+   
+        
+        <!-- code -->
+        <section>
+            <section data-auto-animate>
+              <pre data-id="code-animation"><code data-trim data-line-numbers>
+                import {useState} from "React";
+              </code>
+            </pre>
+          </section>
+
+          <section data-auto-animate>
+            <pre data-id="code-animation"><code data-trim data-line-numbers>
+                import {useState} from "React";
+                const App = () => {
+                  return (
+                    <div>
+                      <h1>My React Project</h1>
+                    </div>
+                  )
+                }
+              </code>
+            </pre>
+          </section>
+        </section>
+
+       <!-- media -->
+       <section>
+         <section data-transition="convex">
+          <img src="https://placehold.co/400" alt="">
+          <img data-src="https://placehold.co/400" alt="">
+         </section>
+
+         <section>
+          <h4>image</h4>
+          <img src="https://placehold.co/400" alt="">
+          <p>placehold.co</p>
+         </section>
+
+         <section>
+          <div class="r-stack">
+            <img class="fragment" src="https://placehold.co/900" alt="" width="600" height="600">
+            <img class="fragment" style="border: 2px solid green;" src="https://placehold.co/700" alt="" width="500" height="500">
+            <img class="fragment" style="border: 2px dotted purple;" src="https://placehold.co/400" alt="" width="400" height="400">
+          </div>
+         </section>
+       </section>
+
+       <!-- mermaid -->
+       <section>
+        <h3>Flowchart</h3>
+        <div class="mermaid">
+          <pre>
+            %%{init: {'theme': 'dark', 'themeVariables': { 'darkMode': true }}}%%
+            flowchart TD
+              A[Start] --> B{Is it?};
+              B -- Yes --> C[OK];
+              C --> D[Rethink];
+              D --> B;
+              B -- No ----> E[End];
+          </pre>
+        </div>
+      </section>
+
+      
+
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
